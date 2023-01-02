@@ -35,39 +35,39 @@
               <label class="form__label">Wygeneruj stopkę/podpis dla swojej skrzynki pocztowej</label>
 
               <!-- <label class="form__pole">Imę i Nazwisko</label> -->
-              <input  autofocus id="name_valid" class="form__item name-input"  type="text"  placeholder="Imię i Nazwisko" ><br>
+              <input required name="username"  autofocus id="name_valid" class="form__item name-input"  type="text"  placeholder="Imię i Nazwisko" ><br>
               <!-- <label class="form__pole">Dział, stanowisko pracy</label> -->
-              <input  id="workplace_valid" class="form__item workplace-input"  type="text"  placeholder="Dział, stanowisko pracy" ><br>
+              <input required name="workplace"  id="workplace_valid" class="form__item workplace-input"  type="text"  placeholder="Dział, stanowisko pracy" ><br>
               <!-- <label class="form__pole">Telefon stacjonarny</label> -->
               <div class="radio-flex">
                 <div class="radio-div">
                   <div class="radio-button">
-                   <input  required name="town" type="radio" class="radio-style" value="Salon">Warszawa
+                   <input  required name="town" type="radio" class="radio-style" value="Warszawa">Warszawa
                  </div>
                 </div>
                 <div class="radio-div">
                  <div class="radio-button">
-                   <input  name="town" type="radio" class="radio-style" value="Biuro">Biskupiec
+                   <input  name="town" type="radio" class="radio-style" value="Biskupiec">Biskupiec
                   </div>
                  </div>
                 </div>
               <div class="telefon">
               <input  readonly value="+48" class="form__item tes-input procmin"  type="text"><br>
-              <input  id="tes_valid" class="form__item tes-input procmax"  type="text"  placeholder="Telefon stacjonarny" ><br>
+              <input name="tes"  id="tes_valid" class="form__item tes-input procmax"  type="text"  placeholder="Telefon stacjonarny" ><br>
               </div>
               
               <label class="form__podpowiedz">Jeśli nie posiadasz nic nie wpisuj</label>
               <!-- <label class="form__pole">Telefon komórkowy</label> -->
               <div class="telefon">
                 <input  readonly value="+48" class="form__item tek-input procmin"  type="text"><br>
-                <input  id="tek_valid" class="form__item tek-input procmax"  type="text"  placeholder="Telefon komórkowy" ><br>
+                <input name="tek"  id="tek_valid" class="form__item tek-input procmax"  type="text"  placeholder="Telefon komórkowy" ><br>
               </div>
               <label class="form__podpowiedz">Jeśli nie posiadasz nic nie wpisuj</label>
 
               <!-- <label class="form__pole">Adres e-mail</label> -->
               <div class="telefon">
-              <input  id="mail_valid" class="form__item mail-input procmailuser"  type="text"  placeholder="Adres e-mail" ><br>
-              <input  readonly value="@inoplex.pl" class="form__item mail-input procmailart" type="text"><br>
+              <input required name="mail" id="mail_valid" class="form__item mail-input procmailuser"  type="text"  placeholder="Adres e-mail" ><br>
+              <input name="domena"  readonly value="@inoplex.pl" class="form__item mail-input procmailart" type="text"><br>
               </div>
               <label id="error" class="form__blad"></label>
               
@@ -265,6 +265,8 @@
       <script src="js/inoplex_check.js"></script>
       <script src="js/stopkaKopija.js"></script>
       <script src="js/pomoc.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/export.js"></script>
     
 </body>
 </html>
