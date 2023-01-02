@@ -1,0 +1,50 @@
+@use "../base/variables" as v;
+
+
+.stopka{
+    @extend %mixin-card_elements;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 11pt;
+    padding: 3%;
+    flex-direction: column;
+    text-align: start;
+
+    .name{
+        // margin-top: 15px;
+    }
+    .workplace{
+        // margin-bottom: 15px;
+    }
+    .mail{
+        // margin-bottom: 15px;
+    }
+    .artimod {
+     font-weight: 900;
+    }
+    .logotypy{
+        // display: flex;
+        margin-bottom: 40px;
+    }
+    .logotyp{
+        // margin-top: 15px;
+        // margin-right: 10px;
+        // display: block;
+        // text-align: justify;
+    }
+    .logo{
+        // display: flex;
+        // height: 30px;
+        // margin-bottom: 40px;
+    }
+    &:hover {
+        box-shadow: 0 0px 10px v.$blue;
+      }
+      .center{
+        text-align: center;
+      }
+    
+}
+.stopka.none{
+    display: none;
+}

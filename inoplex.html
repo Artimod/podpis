@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Stopka - ARTIMOD</title>
+</head>
+<body class="site-body">
+    <main>
+        <section class="zaglowek">
+          <h2>Podpis - ART<span class="red">I</span>MOD</h2>
+          <div class="zaglowek__right">
+            <div class="zaglowek__item">
+              <a href="https://artimod.github.io/podpis">Strona główna</a>
+            <img class="zaglowek__img" src="assets/icons/gonext.svg" alt=">>" />
+            <div class="zaglowek__item">
+              <a href="https://artimod.github.io/podpis/inoplex">INOPLEX</a>
+            </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="flexbox">
+          <div class="container">
+        
+            <form class="form" id="google-sheets">
+              <label class="form__label">Wygeneruj stopkę/podpis dla swojej skrzynki pocztowej</label>
+
+              <!-- <label class="form__pole">Imę i Nazwisko</label> -->
+              <input  autofocus id="name_valid" class="form__item name-input"  type="text"  placeholder="Imię i Nazwisko" ><br>
+              <!-- <label class="form__pole">Dział, stanowisko pracy</label> -->
+              <input  id="workplace_valid" class="form__item workplace-input"  type="text"  placeholder="Dział, stanowisko pracy" ><br>
+              <!-- <label class="form__pole">Telefon stacjonarny</label> -->
+              <div class="radio-flex">
+                <div class="radio-div">
+                  <div class="radio-button">
+                   <input  required name="town" type="radio" class="radio-style" value="Salon">Warszawa
+                 </div>
+                </div>
+                <div class="radio-div">
+                 <div class="radio-button">
+                   <input  name="town" type="radio" class="radio-style" value="Biuro">Biskupiec
+                  </div>
+                 </div>
+                </div>
+              <div class="telefon">
+              <input  readonly value="+48" class="form__item tes-input procmin"  type="text"><br>
+              <input  id="tes_valid" class="form__item tes-input procmax"  type="text"  placeholder="Telefon stacjonarny" ><br>
+              </div>
+              
+              <label class="form__podpowiedz">Jeśli nie posiadasz nic nie wpisuj</label>
+              <!-- <label class="form__pole">Telefon komórkowy</label> -->
+              <div class="telefon">
+                <input  readonly value="+48" class="form__item tek-input procmin"  type="text"><br>
+                <input  id="tek_valid" class="form__item tek-input procmax"  type="text"  placeholder="Telefon komórkowy" ><br>
+              </div>
+              <label class="form__podpowiedz">Jeśli nie posiadasz nic nie wpisuj</label>
+
+              <!-- <label class="form__pole">Adres e-mail</label> -->
+              <div class="telefon">
+              <input  id="mail_valid" class="form__item mail-input procmailuser"  type="text"  placeholder="Adres e-mail" ><br>
+              <input  readonly value="@inoplex.pl" class="form__item mail-input procmailart" type="text"><br>
+              </div>
+              <label id="error" class="form__blad"></label>
+              
+              <button type="submit" id="generacja" class="btn">WYGENERUJ</button>
+          </form>
+
+            <div class="stopka none">
+              <p>Pozdrawiam,</p>
+              <p>&emsp;</p>
+              <p class="name">Imię i nazwisko</p>
+              <p class="workplace">Dział, stanowisko pracy</p>
+              <p>&emsp;</p>
+              
+              <img class="logo" src="assets/icons/pasek1.jpg">
+
+              <p class="town"></p>
+              
+              <p class="tes"><img src="assets/icons/tes.png" alt="Telefon stacjonarny:"> Telefon stacjonarny</p>
+              <p class="tek"><img src="assets/icons/tek.png" alt="Telefon komórkowy:"> Telefon komórkowy</p>
+              <p class="mail"><img src="assets/icons/mail.png" alt="Adres e-mail:"> Adres e-mail</p>
+              <a href="https://www.inoplex.pl" class="www"><img src="assets/icons/www.png" alt="WWW"><span>&emsp;&thinsp;</span> www.inoplex.pl</a>
+              
+              <div class="logotypy">
+              <div class="logotyp">
+                <p>&emsp;</p> 
+                <!-- <img class="logo" src="assets/icons/pasek2.jpg"> -->
+              <a href="https://www.inoplex.pl/"><img class="logo" src="assets/icons/inoplex.jpg" alt="INOPLEX"></a><p>&emsp;</p>
+
+              <p class="artimod"><strong>ARTIMOD S.A.</strong></p>
+              <p>(dawniej: VENEZIA Oganowska Nachiło sp.j.) </p>
+              <p>ul. Rosiczki 5, 04-988 Warszawa</p>
+              <p>Spółka zarejestrowana przez Sąd Rejonowy dla  m.st Warszawy </p>
+              <p>NIP: 952-10-00-409 I REGON: 011382310 I KRS 0001009092</p>
+                <img class="logo" src="assets/icons/pasek1.jpg">
+                <br>
+              <!-- <img class="logo" src="assets/icons/artimod.jpg" alt="ARTIMOD">
+              <img class="logo" src="assets/icons/venezia.jpg" alt="VENEZIA">
+              <span>&ensp;</span><img class="logo" src="assets/icons/unisono.jpg" alt="UNISONO"> -->
+
+              <a href="https://www.facebook.com/malaarchitekturamiejska/"><img class="logo" src="assets/icons/facebook.jpg" alt="facebook"></a><span>&emsp;</span>
+              <a href="https://wizytowka.rzetelnafirma.pl/BusinessCard.aspx?banner=SZ64K00H/"><img class="logo" src="assets/icons/firma.jpg" alt="firma rzetelna"></a>
+              </div>
+              
+              <!-- <div class="logotyp">
+                <span>&thinsp;&emsp;&emsp;</span>
+              <a href="https://www.artimod.pl" style="margin-left: 2px;">artimod.pl</a>
+                <span>&emsp;&emsp;&emsp;&emsp;&ensp;&thinsp;</span>
+              <a href="https://www.venezia.pl" style="margin-left: -2px;">venezia.pl</a>
+                <span>&emsp;&emsp;&emsp;&thinsp;</span>
+              <a href="https://www.unisono.eu/">unisono.eu</a>
+                <span>&emsp;&emsp;&thinsp;</span>
+              <a href="https://www.inoplex.pl/" >inoplex.pl</a>
+              </div> -->
+              </div>
+              <div class="center">
+              <div id="button" class="btn">KOPIUJ</div>
+              </div>
+              </div>
+ 
+            <div class="instal">
+
+            </div>
+
+
+          </div>
+        </section>
+        <!-- <section class="zaglowek_pomoc">
+          <h2>Pomoc w ustawieniu stopki</h2>
+          </div>
+        </section> -->
+        <section class="flexbox">
+          <div class="container blad">
+            <div class="instal">
+              <div class="pomoc">
+              <div class="zaglowek_btn">
+                <h2>Pomoc w ustawieniu podpisu w programie Outlook</h2>
+               
+                  <div class="rozwin">Rozwiń
+                  <svg class="rozwin-svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                  </div>
+                  <div class="rozwin_active">Zwiń
+                    <svg class="rozwin-svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                    </div>
+              </div>
+                <div class="ukryty_film" style="display: none;">
+                <p class="p-glowny">Postępuj się zgodnie z instrukcją dla szybkiego ustawienia stopki w Outlook</p>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">1. Wypełnij formularz wzorując z obrazkiem obok i naciśnij - WYGENERUJ.</p>
+                  <p class="pomoc_text">a) Imię i stanowisko musi zaczynać się wielką literą.</p>
+                  <p class="pomoc_text">b) Telefon wprowadź zgodnie z formatem: „123456789” (Jeśli nie posiadasz, zostaw pole pustym).</p>
+                  <p class="pomoc_text">c) Adres e-mail wprowadź zgodnie z formatem: „imie.nazwisko” bez „@domena”</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/wygeneruj.JPG">
+                </div>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">2. Sprawdź na wzorcu czy wszystko poprawnie wprowadzone i naciśnij - KOPIUJ.</p>
+                  <p class="pomoc_text">Dalej naciśnij OK na komunikacie potwierdzającym czynność.</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/kopiuj.JPG">
+                </div>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">3. Otwórz program pocztowy Outlook, w lewym górnym rogu kliknij - PLIK.</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/plik.JPG">
+                </div>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">4. W lewym pasku znajdź i kliknij - Opcje</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/opcje.JPG">
+                </div>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">5. W opcjach znajdź i kliknij - Poczta.</p>
+                  <p class="pomoc_text">W prawym oknie znajdź i kliknij - Podpis.</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/podpisy.JPG">
+                </div>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">6. W tym oknie możesz podmienić istniejący podpis lub stworzyć nowy.</p>
+                  <p class="pomoc_text">Kliknij - Nowy, wprowadź nazwę podpisu i zatwierdź - OK.</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/nowy.JPG">
+                </div>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">7. W pustym polu kliknij prawym przyciskiem myszki i wybierz - Opcje wklejania: Scal formatowanie(M) (pośrednia ikonka).</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/wklej.JPG">
+                </div>
+                <div class="pomoc_info">
+                  <div class="pomoc_info_text">
+                  <p class="pomoc_text">8. Ustaw domyślny podpis dla odpowiedniej skrzynki. Kliknij - Zapisz i OK.</p>
+                </div>
+                <img class="pomoc_img" src="assets/pomoc/ok.JPG">
+                </div>
+  
+                <p class="p-glowny">Również możesz obejrzeć filmik z ustawieniem podpisu w najnowszej wersji Office.</p>
+                <iframe class="pomoc_film"  src="https://www.youtube.com/embed/AFG5KLR04Ks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              </div>
+              </div>
+              
+            </div>
+            <!-- <h3>Ustaw stopke w programie Thunderbird</h3>
+            <h3>Ustaw stopke na telefonie</h3> -->
+          </div>
+        </section>
+
+      </main>
+      <footer>
+        <div class="footer-width">
+          <div class="zaglowek__item">
+           <a href="https://www.venezia.pl/">@2023.ART<span class="red">I</span>MOD</a>
+          </div>
+          <div class="zaglowek__right">
+              <div class="zaglowek__item">
+                <a href="https://artimod.github.io/podpis">Mapa</a>
+                <img class="zaglowek__img" src="assets/icons/gonext.svg" alt=">>" />
+                <div class="zaglowek__item">
+                <a href="https://artimod.github.io/podpis/inoplex"><strong>INOPLEX</strong></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+      <div class="alert">
+        <div class="alert-flexbox flexbox">
+          <div class="alert-container container">
+            <div class="alert-text">
+              <p class="p-glowny">Stopka została skopiowana</p>
+              <p class="p-glowny">Teraz możesz ją wkleić w swój program obsługujący pocztę.</p>
+              <div class="pomoc_info">
+                <div class="pomoc_info_text">
+                <p class="pomoc_text">W pustym polu kliknij prawym przyciskiem myszki i wybierz - Opcje wklejania: Scal formatowanie(M) (pośrednia ikonka).</p>
+              </div>
+              <img class="pomoc_img" src="assets/pomoc/wklej.JPG">
+              </div>
+            </div>
+            <div class="center">
+              <div id="button" class="btn ok">OK</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="js/stopka.js"></script>
+      <script src="js/inoplex_check.js"></script>
+      <script src="js/stopkaKopija.js"></script>
+      <script src="js/pomoc.js"></script>
+    
+</body>
+</html>
