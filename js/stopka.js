@@ -33,12 +33,12 @@ function validate(e) {
   
   if (!testnameValid) {
     // pomoc.style.backgroundColor = "rgba(163, 32, 32, 0.479)";
-    errors.push("Imię i Nazwisko nie poprawnie wprowadzone, skorzystaj z Pomocy.");
+    errors.push("Imię i Nazwisko nie poprawnie wprowadzone, skorzystaj z Pomocy (kliknij - Rozwiń).");
   }
   const workplaceValidPattern = /[^a-z\s]/;
   const testworkplaceValid = workplaceValidPattern.test(workplaceValid);
   if (!testworkplaceValid) {
-    errors.push("Pole dział, stanowisko pracy nie poprawnie wprowadzone, skorzystaj z Pomocy.");
+    errors.push("Pole dział, stanowisko pracy nie poprawnie wprowadzone, skorzystaj z Pomocy (kliknij - Rozwiń).");
   }
 
   const tesValidPattern = /^[0-9]{9}$/;
@@ -54,7 +54,7 @@ function validate(e) {
   const mailValidPattern = /^[a-z\d]+[\w.-]*[a-z\d]+[a-z\d-]$/i;
   const testmailValid = mailValidPattern.test(mailValid);
   if (!testmailValid) {
-    errors.push("Format e-mail jest niepoprawny, skorzystaj z Pomocy.");
+    errors.push("Format e-mail jest niepoprawny, skorzystaj z Pomocy (kliknij - Rozwiń).");
   }
   if (errors.length > 0) {
     pomoc.style.backgroundColor = "rgba(163, 32, 32, 0.3)";
