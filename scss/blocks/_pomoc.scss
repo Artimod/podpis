@@ -66,14 +66,24 @@ width: 90%;
 
 }
 .p-glowny{
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 900;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .red-glowny{
-color: v.$text_podpowiedz;
-font-size: 20px;
+@extend %mixin-card_elements;
+padding: 50px;
+color: red;
+margin-top: 70px;
+margin-bottom: 50px;
+line-height: 1.5;
+}
+.red_text{
+  color: red;
+}
+.black_text{
+  color: black;
 }
 .pomoc_info{
   width: 100%;
