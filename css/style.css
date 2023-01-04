@@ -79,7 +79,7 @@ footer, header {
 
 body {
   min-width: 100ch;
-  background-color: #f7f7f7;
+  background-color: hsl(0deg, 0%, 97%);
   font-family: "Roboto", sans-serif;
 }
 
@@ -245,7 +245,7 @@ h2 {
 .form__podpowiedz {
   margin-top: -12px;
   margin-bottom: 15px;
-  color: #a32020;
+  color: rgb(163, 32, 32);
   font-weight: 700;
   font-size: 15px;
   font-style: italic;
@@ -254,7 +254,7 @@ h2 {
   margin-top: -5px;
   line-height: 1.3;
   margin-bottom: 25px;
-  color: #a32020;
+  color: rgb(163, 32, 32);
   font-weight: 700;
   font-size: 18px;
   font-style: italic;
@@ -456,6 +456,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+.red-glowny {
+  color: rgb(163, 32, 32);
+  font-size: 20px;
+}
+
 .pomoc_info {
   width: 100%;
   display: flex;
@@ -481,6 +486,11 @@ h2 {
 
 .ukryty_film {
   display: none;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.zmiana-poczty {
   margin-top: 30px;
   text-align: center;
 }
