@@ -13,6 +13,7 @@
     color: v.$text_zaglowki;
     font-weight: 700;
     font-size: 24px;
+    
     // font-style: italic;
   }
   &__pole{
@@ -44,6 +45,7 @@
     @extend %mixin-card_elements;
     text-align: center;
     padding: 1.5%;
+    font-family: inherit;
     // text-transform:  uppercase;
     width: 50%;
     border-radius: 4px;
@@ -121,6 +123,7 @@
 }
 
 .radio-style{
+  margin: 0;
   width: 35px;
   height: 35px;
   -webkit-appearance: none;
@@ -147,6 +150,8 @@
   color: #ffffff;
   font-size: 30px;
   font-weight: 900;
+  line-height: 1.5;
+  font-family: inherit;
   transition: background-color 0.1s ease-in;
   &:hover {
     background-color: v.$text_zaglowki;

@@ -190,6 +190,9 @@ h2 {
 
 .flexbox {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .flexbox h3 {
   color: #666666;
@@ -268,6 +271,7 @@ h2 {
 .form__item {
   text-align: center;
   padding: 1.5%;
+  font-family: inherit;
   width: 50%;
   border-radius: 4px;
   border: 2px solid #b8b8b8;
@@ -334,6 +338,7 @@ h2 {
   margin: 0px 20px;
 }
 .form .radio-style {
+  margin: 0;
   width: 35px;
   height: 35px;
   -webkit-appearance: none;
@@ -359,6 +364,8 @@ h2 {
   color: #ffffff;
   font-size: 30px;
   font-weight: 900;
+  line-height: 1.5;
+  font-family: inherit;
   transition: background-color 0.1s ease-in;
 }
 .btn:hover {
