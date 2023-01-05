@@ -100,6 +100,12 @@ h1 {
   margin: 0px 2px 0px 2px;
 }
 
+.red-18 {
+  color: red;
+  font-size: 18px;
+  margin: 0px 3px 0px 3px;
+}
+
 main {
   min-height: 100vh;
   margin-bottom: 20px;
@@ -289,8 +295,20 @@ h2 {
 .form .procmailuser {
   width: 35%;
 }
+.form .salonmin {
+  width: 15%;
+}
+.form .salonmax {
+  width: 35%;
+}
 .form .display_none_dodane, .form .display_none_nie_dodane {
   display: none;
+}
+.form .kandydat {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .form .th-style {
   font-size: 30px;
@@ -665,6 +683,31 @@ h3,
     font-size: 45px;
   }
 }
+.rekrutacja p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.rekrutacja .grub {
+  font-weight: 600;
+}
+.rekrutacja .grub::first-letter {
+  font-size: 24px;
+  color: red;
+}
+.rekrutacja .under {
+  text-decoration: underline red 2px;
+}
+.rekrutacja ul {
+  list-style-type: disc;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
 .alert {
   animation: showBlock 0.3s linear forwards;
   opacity: 100;
@@ -687,6 +730,11 @@ h3,
 }
 
 .alert-flexbox {
+  margin: 0;
+}
+
+.alert-flexbox-rek {
+  width: 70%;
   margin: 0;
 }
 
