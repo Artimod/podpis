@@ -80,11 +80,11 @@ h2 {
 }
 .flexbox{
   margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   // width: 80%;
-  // @extend %mixin-card_flexbox;
+  @extend %mixin-card_flexbox;
   
   h3{
     color: v.$text_zaglowki;
