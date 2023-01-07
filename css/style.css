@@ -691,31 +691,6 @@ h3,
     font-size: 45px;
   }
 }
-.rekrutacja p {
-  font-size: 18px;
-  line-height: 1.4;
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-.rekrutacja .grub {
-  font-weight: 600;
-}
-.rekrutacja .grub::first-letter {
-  font-size: 24px;
-  color: red;
-}
-.rekrutacja .under {
-  text-decoration: underline red 2px;
-}
-.rekrutacja ul {
-  list-style-type: disc;
-  font-size: 18px;
-  line-height: 1.4;
-  font-weight: 500;
-  margin-bottom: 30px;
-  margin-left: 40px;
-}
-
 .alert {
   animation: showBlock 0.3s linear forwards;
   opacity: 100;
