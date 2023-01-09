@@ -363,6 +363,7 @@ h2 {
   font-weight: 900;
   line-height: 1.5;
   font-family: inherit;
+  user-select: none;
   transition: background-color 0.1s ease-in;
 }
 .btn:hover {
