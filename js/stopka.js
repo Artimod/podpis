@@ -60,8 +60,10 @@ function validate(e) {
     pomoc.style.backgroundColor = "rgba(163, 32, 32, 0.3)";
     pomoc.style.color = "#000000";
     placeError.innerHTML = errors.join("<br>");
+    placeError.classList.add("visible"); // Dodanie klasy, aby pokazać błędy
   }else{
     pomoc.style.backgroundColor = "#FFFFFF";
+    placeError.classList.remove("visible"); // Usunięcie klasy, gdy nie ma błędów
   }
 
   username.innerHTML = nameInput;
