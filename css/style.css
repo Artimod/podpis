@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Syne+Tactile&family=Ubuntu&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,14 +55,14 @@ footer, header {
   background-color: #ffffff;
 }
 
-.container, .zaglowek, .zaglowek_pomoc {
+.form__blad, .container, .zaglowek, .zaglowek_pomoc {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.18);
   border-radius: 6px;
   background-color: #ffffff;
 }
 
 .red-glowny, .stopka, .form__item, .form .radio-div, .nav__item {
-  box-shadow: 0 0px 10px #808080;
+  box-shadow: 0 0px 10px #000000;
   border-radius: 6px;
   background-color: inherit;
 }
@@ -79,7 +80,7 @@ footer, header {
 
 body {
   min-width: 100ch;
-  background-color: hsl(0deg, 0%, 97%);
+  background-color: hsl(0, 0%, 97%);
   font-family: "Roboto", sans-serif;
 }
 
@@ -88,7 +89,7 @@ header {
 }
 
 h1 {
-  color: #666666;
+  color: #000000;
   font-size: 35px;
   font-weight: 900;
   text-align: center;
@@ -136,8 +137,8 @@ main {
 }
 
 h2 {
-  color: #666666;
-  font-size: 28px;
+  color: #000000;
+  font-size: 24px;
   font-weight: 900;
 }
 
@@ -148,7 +149,7 @@ h2 {
 
 .zaglowek__item {
   display: flex;
-  color: #b8b8b8;
+  color: #6e7684;
   font-size: 15px;
   font-weight: 700;
   line-height: 2.14;
@@ -192,7 +193,7 @@ h2 {
   margin-top: 20px;
 }
 .flexbox h3 {
-  color: #666666;
+  color: #000000;
   font-weight: 700;
   font-size: 22px;
   font-style: italic;
@@ -214,7 +215,7 @@ h2 {
   box-shadow: 0 0px 20px #1875f0;
 }
 .nav__item:hover .nav__link {
-  color: #808080;
+  color: #000000;
 }
 
 .nav__link {
@@ -237,9 +238,9 @@ h2 {
 }
 .form__label {
   margin-bottom: 30px;
-  color: #666666;
+  color: #000000;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
 }
 .form__pole {
   margin-bottom: 10px;
@@ -251,29 +252,46 @@ h2 {
 .form__podpowiedz {
   margin-top: -12px;
   margin-bottom: 15px;
-  color: rgb(163, 32, 32);
+  color: rgba(0, 0, 0, 0.705);
   font-weight: 700;
   font-size: 15px;
   font-style: italic;
 }
 .form__blad {
-  margin-top: -5px;
+  margin-top: 10px;
   line-height: 1.3;
   margin-bottom: 25px;
   color: rgb(163, 32, 32);
   font-weight: 700;
   font-size: 18px;
-  font-style: italic;
+  padding: 20px;
+  position: relative;
+  display: none;
+}
+.form__blad.visible {
+  display: block;
+}
+.form__blad::before {
+  content: "Napraw błędy:";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(163, 32, 32);
+  padding: 2px 5px;
+  border-radius: 3px;
 }
 .form__item {
   text-align: center;
-  padding: 1.5%;
+  padding: 1.2%;
   font-family: inherit;
   width: 50%;
   border-radius: 4px;
-  border: 2px solid #b8b8b8;
+  border: 2px solid #6e7684;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 900;
 }
 .form__item:focus {
   box-shadow: 0 0px 10px #1875f0;
@@ -320,7 +338,7 @@ h2 {
   display: flex;
 }
 .form .radio-div {
-  border: 2px solid #b8b8b8;
+  border: 2px solid #6e7684;
   width: 50%;
   padding: 2px;
   margin-bottom: 20px;
@@ -367,7 +385,7 @@ h2 {
   transition: background-color 0.1s ease-in;
 }
 .btn:hover {
-  background-color: #666666;
+  background-color: #000000;
 }
 
 .stopka {
@@ -429,10 +447,10 @@ h2 {
   transition-delay: 0.1s;
 }
 .rozwin:active {
-  color: #808080;
+  color: #000000;
 }
 .rozwin:active .rozwin-svg {
-  fill: #808080;
+  fill: #000000;
   rotate: 180deg;
   transition-delay: 0.1s;
 }
@@ -442,7 +460,7 @@ h2 {
   cursor: pointer;
   font-size: 26px;
   font-weight: 900;
-  color: #808080;
+  color: #000000;
   transition-delay: 0.1s;
 }
 .rozwin_active:active {
@@ -454,7 +472,7 @@ h2 {
   transition-delay: 0.1s;
 }
 .rozwin_active .rozwin-svg {
-  fill: #808080;
+  fill: #000000;
   rotate: 180deg;
 }
 
@@ -473,7 +491,7 @@ h2 {
 }
 
 .p-glowny {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 900;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -578,70 +596,57 @@ footer {
   h1 {
     font-size: 45px;
   }
-
   .btn {
     margin-top: 100px;
     font-size: 60px;
     padding: 20px 70px;
   }
-
   h2 {
     font-size: 35px;
   }
-
   a,
-p,
-output,
-h3,
-.flexbox h3,
-.container p,
-.nav__link,
-.form__label,
-.form__item {
+  p,
+  output,
+  h3,
+  .flexbox h3,
+  .container p,
+  .nav__link,
+  .form__label,
+  .form__item {
     font-size: 30px;
   }
-
   .form__item {
     width: 90%;
     padding: 4%;
   }
-
   .form__label {
     font-size: 35px;
   }
-
   .form__podpowiedz {
     margin-top: -5px;
     margin-bottom: 25px;
     font-size: 25px;
   }
-
   .form__blad {
     margin-bottom: -25px;
     font-size: 30px;
   }
-
   .form .procmin {
     width: 20%;
   }
-
   .form .procmax {
     width: 70%;
   }
-
   .dodano {
     padding: 4%;
   }
-
   .zaglowek__img {
     width: 5%;
   }
-
   .nav__item {
     margin: 15px;
     width: 80%;
   }
-
   .stopka {
     width: 45%;
     scale: 190%;
@@ -660,33 +665,27 @@ h3,
     margin-bottom: -10px;
     scale: 70%;
   }
-
   img {
     width: 4.2%;
   }
-
   .tes {
     margin-right: 5px;
   }
-
   .tek {
     margin-right: 8.5px;
   }
-
   .logo_mail {
     margin-right: 8px;
   }
-
   .form,
-.zaglowek,
-.opis,
-.content_main,
-.footer-width,
-.container {
+  .zaglowek,
+  .opis,
+  .content_main,
+  .footer-width,
+  .container {
     padding: 50px 2px 50px 2px;
     width: 98%;
   }
-
   .mob {
     display: block;
     font-size: 45px;
